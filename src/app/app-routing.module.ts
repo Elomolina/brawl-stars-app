@@ -1,10 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BrawlStartsPageComponent } from './brawl-stars/pages/brawl-starts-page/brawl-starts-page.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: 'brawl-stars',
+    loadChildren: () =>
+      import('./brawl-stars/brawl-stars.module').then(
+        (m) => m.BrawlStarsModule
+      ),
+  },
+  {
+    path: '**',
+    redirectTo: 'brawl-stars',
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

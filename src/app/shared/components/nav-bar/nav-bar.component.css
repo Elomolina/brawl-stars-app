@@ -1,0 +1,15 @@
+nav {
+  background-color: #febe20;
+}
+nav ul {
+  background-color: #febe20;
+}
+li a {
+  font-weight: bold;
+}
+.title {
+  font-weight: 300;
+  color: black;
+  letter-spacing: 0.1em;
+  font-family: "Modak", serif;
+}

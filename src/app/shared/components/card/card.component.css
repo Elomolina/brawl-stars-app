@@ -1,0 +1,26 @@
+@media (max-width: 800px) {
+  div {
+    width: 100%;
+  }
+  div h5,
+  div p {
+    text-align: start;
+    font-size: 1rem;
+  }
+  div img {
+    width: 200px;
+    height: 200px;
+  }
+}
+.card {
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 1s;
+}
+.card img {
+  margin: 1em;
+}
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
