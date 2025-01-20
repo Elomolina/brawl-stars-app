@@ -12,7 +12,7 @@ export const routes: Routes = [
     component: BrawlStartsPageComponent,
   },
   {
-    path: 'maos',
+    path: 'maps',
     component: MapsPageComponent,
   },
   {
