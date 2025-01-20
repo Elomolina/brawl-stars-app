@@ -14,9 +14,7 @@ export class BrawlStartsPageComponent implements OnInit {
   constructor(private brawlStarsService: BrawlStarsService) {}
   ngOnInit(): void {
     this.brawlStarsService.brawlers().subscribe((data) => {
-      console.log(data.list);
       this.brawlers = data.list;
     });
   }
-  public numbers: number[] = [1, 2, 3, 4];
 }

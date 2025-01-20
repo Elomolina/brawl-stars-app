@@ -1,0 +1,35 @@
+<div class="name">
+  <h1>{{ brawler.name }}</h1>
+  <img src="{{ brawler.imageUrl3 }}" alt="brawler" />
+</div>
+<section class="description">
+  <img src="{{ brawler.imageUrl2 }}" alt="brawler" />
+  <p>{{ brawler.description }}</p>
+</section>
+<h2>Gadgets</h2>
+<div class="gadgets">
+  <div class="gadget" *ngFor="let gadget of brawler.gadgets">
+    <img src="{{ gadget.imageUrl }}" alt="gadget" />
+    <h3>
+      {{ gadget.name }}
+    </h3>
+    <p>
+      {{ gadget.description }}
+    </p>
+  </div>
+</div>
+<h2>Star Powers</h2>
+<div class="gadgets starPower">
+  <div class="gadget" *ngFor="let starPower of brawler.starPowers">
+    <img src="{{ starPower.imageUrl }}" alt="starPower" />
+    <h3>
+      {{ starPower.name }}
+    </h3>
+    <p>
+      {{ starPower.description }}
+    </p>
+  </div>
+</div>
+<div class="rarity" [ngStyle]="{ backgroundColor: brawler.rarity.color }">
+  <h2>Rarity: {{ brawler.rarity.name }}</h2>
+</div>

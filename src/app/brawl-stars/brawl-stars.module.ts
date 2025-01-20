@@ -6,6 +6,7 @@ import { EventsPageComponent } from './pages/events-page/events-page.component';
 import { SharedModule } from '../shared/shared.module';
 import { MapsPageComponent } from './pages/maps-page/maps-page.component';
 import { GameModesPageComponent } from './pages/game-modes-page/game-modes-page.component';
+import { BrawlerPageComponent } from './pages/brawler-page/brawler-page.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { GameModesPageComponent } from './pages/game-modes-page/game-modes-page.
     EventsPageComponent,
     MapsPageComponent,
     GameModesPageComponent,
+    BrawlerPageComponent,
   ],
   imports: [CommonModule, BrawlStarsRoutingModule, SharedModule],
 })

@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Brawler } from '../interfaces/brawlers.interface';
+import { Brawler, List } from '../interfaces/brawlers.interface';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -14,5 +14,9 @@ export class BrawlStarsService {
     const apiUrl = `${this.url}/brawlers`;
     //make http request
     return this.httpClient.get<Brawler>(apiUrl);
+  }
+  public getBrawlerById(id: string): Observable<List> {
+    const apiUrl = `${this.url}/brawlers/${id}`;
+    return this.httpClient.get<List>(apiUrl);
   }
 }
