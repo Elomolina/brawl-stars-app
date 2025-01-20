@@ -1,4 +1,6 @@
+<shared-search-bar (brawlSearch)="brawlSearch($event)"></shared-search-bar>
 <div class="container">
+  <h3 *ngIf="brawlers.length == 0">No brawler found</h3>
   <shared-card
     [brawler]="brawler"
     *ngFor="let brawler of brawlers"

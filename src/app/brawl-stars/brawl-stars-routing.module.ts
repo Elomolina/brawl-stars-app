@@ -16,10 +16,6 @@ export const routes: Routes = [
     component: MapsPageComponent,
   },
   {
-    path: 'eventos',
-    component: EventsPageComponent,
-  },
-  {
     path: 'modos-de-juego',
     component: GameModesPageComponent,
   },

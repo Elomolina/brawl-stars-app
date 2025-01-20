@@ -15,6 +15,6 @@ export class CardComponent {
   loaded() {
     setTimeout(() => {
       this.isLoaded = true;
-    }, 1000);
+    }, 500);
   }
 }

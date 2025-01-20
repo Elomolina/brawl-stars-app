@@ -5,6 +5,8 @@ import { RouterModule } from '@angular/router';
 import { FooterComponent } from './components/footer/footer.component';
 import { CardComponent } from './components/card/card.component';
 import { LoadingSpinnerComponent } from './components/loading-spinner/loading-spinner.component';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,13 +14,15 @@ import { LoadingSpinnerComponent } from './components/loading-spinner/loading-sp
     FooterComponent,
     CardComponent,
     LoadingSpinnerComponent,
+    SearchBarComponent,
   ],
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, FormsModule],
   exports: [
     NavBarComponent,
     FooterComponent,
     CardComponent,
     LoadingSpinnerComponent,
+    SearchBarComponent,
   ],
 })
 export class SharedModule {}
